@@ -1,0 +1,323 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+*
+  html {
+
+      @font face{
+        font family
+
+
+    }
+  }  
+
+#imgPrincipal{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    
+}
+
+#topbar{
+    background-color: rgba(10, 19, 1, .5);
+    height: 50px;
+    position: fixed;
+    width: 100%;
+}
+
+ #titulos{
+    position: absolute;
+    top:100px;
+    margin-left: 5vw;
+    color: white;
+
+    #contBuscador{ 
+      margin-left: 100%;
+      padding: 8px 32px;
+      .buscador{ 
+        background-color: transparent;
+        border-color: white;
+        border-radius: 50px;
+        padding: 8px 32px;
+        color: white;
+        border: 1px solid;
+        font-family: Arial;
+      } 
+
+    } 
+  } 
+    button{
+        background-color: transparent;
+        border-color: white;
+        border-radius: 50px;
+        padding: 8px 32px;
+        color: white;
+        border: 1px solid;
+        
+        font-family: Arial;
+    } 
+       .cuadro{ 
+          display: grid;
+          grid-template-columns: 5fr 1fr 1fr 1fr 5fr;
+          margin-inline-start: 100px;
+          row-gap: 26px;
+          top: 80vh;
+          width: 100%;
+         .linea{
+            height: 5px;
+            width: 31.5px;
+            background-color: gray;
+          }  
+       }   
+    
+
+#redes{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 41px 25px 25px 25px 25px;
+        width: 45px;
+        justify-items: center;
+        position: fixed;
+        top: 100px;
+    img{
+       display: block;
+       margin-top: 10px;
+     }   
+    p{
+       transform: rotate(90deg);
+       display: inline-block; 
+     }
+    #rayita{
+        height: 30px;
+        width: 1px;
+        border-left: 1px solid;
+        margin-top: 15px;
+        
+    }    
+ }   
+  
+
+.seccion{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ .galeria{ 
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   gap: 18px;
+
+ .primera{ 
+    grid-column: span 2;
+   }
+   .ultima{ 
+    grid-column: span 5;
+    position: relative;
+   }
+    .texto{
+     position: absolute;
+     transform: translateY(-100%);
+     font-size: 20px;
+     padding: 15px;
+   }
+   .textosUno{
+    color: white;
+   }
+   .textosDos{
+    color: black;
+    background-color: white;
+    width: 100%;
+   }
+   img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+ }
+
+
+}   
+.contenido{
+     display: grid;
+     padding-right: 100px;
+
+ .botones{ 
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: end;
+  }
+  .medio{
+    background-color: transparent;
+    border-radius: 48px;
+    height: fit-content;
+    font: size 24px;
+    padding: 12px;
+    border: 1px solid;
+    color:gray ;
+  }
+  .direcciones{
+    background-color: transparent;
+    border: none;
+  }
+   .prev{
+    color: gray;
+   }
+   .next{
+    color: orange;
+   }
+  .textos{
+    font-size: 30px;
+    text-align: right;
+    h6{
+        color: orange;
+        margin-bottom: 15px;
+    }
+  }
+}
+
+
+.seccion2{ 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 10px;
+  padding: 30px;
+  object-fit: cover;
+}
+img{
+  max-width: 100%;
+  margin-bottom: 15px;
+  
+}
+.referencia,
+.principal{
+  margin-left: 25px;
+}
+.principal{
+  font-size: 25px;
+}
+.referencia{
+  font-size: 20px;
+  color: gray;
+}  
+
+/*secccion footer*/
+
+ footer{
+
+   height: 500px;
+   width: 100%;
+   background-color: black;
+   margin-top: 300px;
+
+  .gris{
+    height: 300px;
+    background-color: #444;
+    width: 80%;
+    margin: auto;
+    transform: translateY(-50%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+   
+  
+   .segunda{
+    display: grid;
+    padding: 100px;
+    gap: 10px;
+
+    input{ 
+      background-color: transparent;
+      border: solid 1px gray;
+      border-radius: 44px;
+      padding: 10px 20px;
+      font-family: 20px;
+     }
+     button{
+      background-color: transparent;
+      border: solid 1px orange;
+      color: orange;
+      border-radius: 24px;
+      padding: 10px 20px;
+      font-family: 20px;
+      width: 60%; 
+      justify-self: end;
+
+     }
+
+    p{
+      margin-left: 20px;
+      color: white;
+      border-radius: 24px;
+     }
+
+   }
+
+    #textFooter{
+     font-size: 30px;
+     color: white;
+     justify-self: center;  
+    }
+
+     span{
+      color: orange;
+    }
+
+  }
+   .negro{
+    color: white;
+    display: grid;
+    width: 90%;
+    margin: auto;
+    gap: 10px;
+
+    .enlaces{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      font-size: 24px;
+
+      .primera{
+        align-self: self-end;
+      }
+      .segunda{
+        align-self: center;
+      }
+      .tercera{
+        align-self: self-end;
+
+        #separado{
+          margin-top: 20px;
+        }
+      }  
+      .medio{
+        justify-self: center;
+      }
+      .ultima{
+        text-align: right;
+        align-self: self-end;
+        
+        #separado2{
+          margin-top: 20px;
+        }
+      }
+
+      ul{
+        li{
+          list-style: none;
+        }
+      }
+    }
+
+    .copy{
+      margin-top: 20px;
+      border-top: solid 2px white;
+      p{
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+  }
+  
+} 
+
+  
+  
