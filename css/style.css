@@ -1,31 +1,99 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
-*
-  html {
 
-      @font face{
-        font family
+ @font-face {
 
-
-    }
-  }  
+  font-family: '/fonts/Pfregal';
+  src: url('/fonts/Pfregal/PFRegalDisplayPro-Regular.ttf');
+ }
 
 #imgPrincipal{
     width: 100%;
     height: 350px;
     object-fit: cover;
-    
 }
 
-#topbar{
-    background-color: rgba(10, 19, 1, .5);
-    height: 50px;
-    position: fixed;
-    width: 100%;
-}
+
+ #topbar{
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.233);
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+  position: fixed;
+  top: 0;
+
+   #Logo {
+      margin-left: 100px;
+    }
+   #lupita{
+     display: none;
+     border: solid 1px white;
+     border-radius: 50%;
+     padding: 14px;
+    }
+
+ .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+  
+     a {
+      text-decoration: none;
+      color: white;
+     }
+
+     .grey {
+       color: grey;
+     }
+
+    .registro {
+    
+      display: grid;
+      grid-template-columns: 1fr 1px 1fr;
+      align-self: center;
+
+      a {
+        justify-self: center;
+      }
+      .grey{
+        color: grey;
+       }
+
+      #bar {
+       height: 100%;
+       width: 1px;
+      background-color: white;
+      } 
+    }  
+
+
+   .idiomas {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+    
+      a {
+        text-decoration: none;
+        color: white;
+        justify-self: center;
+      }
+      .grey{
+        color: grey;
+       }
+
+     #logo-mobile {
+      margin-right: 40px;
+      }
+    
+    }  
+  } 
+}     
 
  #titulos{
     position: absolute;
@@ -33,8 +101,21 @@
     margin-left: 5vw;
     color: white;
 
+    h2{
+      font-family:'/fonts/Pfregal';
+      font-size: 40px;
+      font-weight: 400;
+      color: #b4b7b7;
+    }
+    h3{
+      font-family:'/fonts/Pfregal';
+      font-size: 60px;
+      font-weight: 500;
+      color: #FFFFFF;
+    } 
+
     #contBuscador{ 
-      margin-left: 100%;
+      margin-left: 40%;
       padding: 8px 32px;
       .buscador{ 
         background-color: transparent;
@@ -43,35 +124,33 @@
         padding: 8px 32px;
         color: white;
         border: 1px solid;
-        font-family: Arial;
+        font-family:Arial;
       } 
-
     } 
-  } 
     button{
         background-color: transparent;
         border-color: white;
         border-radius: 50px;
         padding: 8px 32px;
-        color: white;
+        color: #FFFFFF;
         border: 1px solid;
-        
-        font-family: Arial;
-    } 
+        font-family:'Lucida Sans';
+        font-size: 20px;
+      } 
        .cuadro{ 
           display: grid;
           grid-template-columns: 5fr 1fr 1fr 1fr 5fr;
           margin-inline-start: 100px;
           row-gap: 26px;
-          top: 80vh;
+          top: 90vh;
           width: 100%;
          .linea{
             height: 5px;
             width: 31.5px;
-            background-color: gray;
+            background-color: #D9D9D9;
           }  
        }   
-    
+  }  
 
 #redes{
         display: grid;
@@ -117,16 +196,41 @@
     .texto{
      position: absolute;
      transform: translateY(-100%);
-     font-size: 20px;
      padding: 15px;
    }
    .textosUno{
-    color: white;
-   }
+      width: 100%;
+       margin-top: 0px;
+      
+       h5{
+        font-family:'/fonts/Pfregal';
+        font-size: 30px;
+        font-weight: 300;
+        color: #FFFFFF
+       }
+       h6{
+         font-family:'/fonts/Pfregal';
+         font-size: 40px;
+         font-weight: 400;
+         color: #FFFFFF
+       }
+    }
    .textosDos{
-    color: black;
     background-color: white;
     width: 100%;
+    h3{
+      font-family:'/fonts/Pfregal';
+      font-size: 30px;
+      font-weight: 400;
+      color: #464547;
+     }
+     h4{
+      font-family:'/fonts/Pfregal';
+      font-size: 40px;
+      font-weight: 500;
+      color: #000000;
+     }
+
    }
    img {
     width: 100%;
@@ -134,8 +238,6 @@
     object-fit: cover;
    }
  }
-
-
 }   
 .contenido{
      display: grid;
@@ -150,38 +252,77 @@
     background-color: transparent;
     border-radius: 48px;
     height: fit-content;
-    font: size 24px;
+    font-size: 20px;
+    font-family:  'Lucida Sans';
     padding: 12px;
     border: 1px solid;
-    color:gray ;
+    color:#000000 ;
   }
   .direcciones{
     background-color: transparent;
     border: none;
   }
    .prev{
-    color: gray;
+      font-size: 20px;
+      font-weight: 390;
+      color: #B4B7B7;
    }
    .next{
-    color: orange;
+      font-size: 20px;
+      font-weight: 390;
+      color: #DF991B
    }
   .textos{
     font-size: 30px;
     text-align: right;
     h6{
-        color: orange;
-        margin-bottom: 15px;
+      font-family:'/fonts/Pfregal';
+      font-size: 40px;
+      font-weight: 400;
+      color: #DF991B; 
+      margin-bottom: 15px;
     }
+    h5{
+      font-family:'/fonts/Pfregal';
+    font-size: 80px;
+    font-weight: 500;
+    color: #000000; 
+   }
   }
 }
+.developments{
+  text-align: center;
+  margin-top: 25px;
 
+  h2{
+    font-family:'/fonts/Pfregal'; 
+    font-size: 40px;
+    font-weight: 400;
+    color: #DF991B; 
+  }
+  h1{
+    font-family:'/fonts/Pfregal'; 
+    font-size: 80px;
+    font-weight: 500;
+    color: #000000;
+  }   
+}
+ /*seccion de galeria de imagenes*/
+    
+  #galeriacont .seccion2 img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }   
 
 .seccion2{ 
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 40px 10px;
   padding: 30px;
-  object-fit: cover;
+  height: auto;
+  max-width: 100%;
+  overflow: hidden;
 }
 img{
   max-width: 100%;
@@ -193,12 +334,22 @@ img{
   margin-left: 25px;
 }
 .principal{
-  font-size: 25px;
+  font-family:'/fonts/Pfregal';
+  font-size: 40px;
+  font-weight: 500;
+  color: #000;
+
 }
 .referencia{
-  font-size: 20px;
-  color: gray;
+  font-family:'/fonts/Pfregal'; 
+  font-size: 25px;
+  font-weight: 400;
+  color: #464547;
+
 }  
+.galresp{
+  display: none;
+} 
 
 /*secccion footer*/
 
@@ -234,19 +385,21 @@ img{
      }
      button{
       background-color: transparent;
-      border: solid 1px orange;
-      color: orange;
+      border: solid 1px #DF991B;
+      color: #DF991B;
       border-radius: 24px;
       padding: 10px 20px;
-      font-family: 20px;
+      font-family: 'Lucida Sans';
+      font-size: 15px;
       width: 60%; 
       justify-self: end;
-
      }
 
     p{
       margin-left: 20px;
-      color: white;
+      font-family: '/fonts/Pfregal';
+      font-size: 25px;
+      color: #FFFFFF;
       border-radius: 24px;
      }
 
@@ -259,16 +412,18 @@ img{
     }
 
      span{
-      color: orange;
+      font-family:'/fonts/Pfregal';
+      font-size: 40px;
+      font-weight: 400;
+      color:#DF991B;
     }
-
   }
    .negro{
-    color: white;
-    display: grid;
-    width: 90%;
-    margin: auto;
-    gap: 10px;
+      color: #FFFFFF;
+      display: grid;
+      width: 90%;
+      margin: auto;
+      gap: 10px;
 
     .enlaces{
       display: grid;
@@ -277,12 +432,25 @@ img{
 
       .primera{
         align-self: self-end;
+        font-family:'/fonts/Pfregal';
+        font-size: 23px;
+        font-weight: 280;
+        color: #FFFFFF;
+
       }
       .segunda{
         align-self: center;
+        font-family:'/fonts/Pfregal';
+        font-size: 27px;
+        font-weight: 350;
+        color: #B4B7B7;
       }
       .tercera{
         align-self: self-end;
+        font-family: '/fonts/Pfregal';
+        font-size: 27px;
+        font-weight: 350;
+        color: #B4B7B7;
 
         #separado{
           margin-top: 20px;
@@ -297,27 +465,45 @@ img{
         
         #separado2{
           margin-top: 20px;
+          font-family:'/fonts/Pfregal';
+          font-size: 25px;
+          font-weight: 350;
+          color: #B4B7B7;
+
         }
       }
 
       ul{
         li{
           list-style: none;
+          .call{
+            font-family:'/fonts/Pfregal';
+            font-size: 30px;
+            font-weight: 400;
+            color: #B4B7B7;
+          }
+          .phone{
+            font-family:'/fonts/Pfregal'; 
+            font-size: 40px;
+            font-weight: 500;
+            color: #FFFFFF;
+          }
         }
       }
     }
-
     .copy{
       margin-top: 20px;
       border-top: solid 2px white;
       p{
         text-align: center;
         margin-top: 20px;
+        font-family: '/fonts/Pfregal';
+        font-size: 20px;
+        font-weight: 450;
       }
     }
   }
   
 } 
 
-  
   

@@ -1,20 +1,25 @@
 
     
     /*seccion de Footer responsivo*/
-    @media(max-width: 1000px) {
+    @media(max-width: 1024px) {
     html{
-            background-color: white;
+            background-color: violet;
 
 
             #imgPrincipal{
 
               height: 100vh;
-              width: 100dvw;
+              width: 100%;
               background-size: cover;
               background-position: top;
               background-repeat: no-repeat;
               filter: brightness(0,5);
             } 
+            .seccion2{
+              padding: 40px;
+              grid-template-columns: repeat(3, 1fr);
+            }
+
 
             footer{
               .gris{
@@ -55,15 +60,200 @@
         
         
         
-        @media(max-width: 900px) {
+        @media(max-width: 750px) {
           html{
-          }    
-      }    
+            background-color: orange;
+          }
+           #topbar {
+            #Logo{
+              display: none;
+           }
+           #lupita {
+            display: inline;
+            margin-left: 30px;
+           }
+           .links{
+             grid-template-columns: 1fr;
+             .idiomas {
+                grid-template-columns: 1fr;
+                justify-items: end;
+                a {
+                display: none;
+                }
+                #logo-mobile{
+                  display: inline;
+                  margin-right: 40px;
+                  }
+              }
+              .registro{
+                display: none;
+                }
+            }
+          }
+            .seccion{
+              .primera{
+                display: none;
+                }
+                .ultima{
+                  img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                   }
+                
+                  }
+                .texto{
+                  display: none;
+                  }
+
+                .contenido{
+              display: none;
+              }
+            }
+
+            .developments{
+              text-align: center;
+              margin-top: 25px;
+              h2{
+                font-family:'/fonts/Pfregal'; 
+                font-size: 20px;
+                font-weight: 200;
+                color: #DF991B;  
+              }
+              h1{
+                font-family:'/fonts/Pfregal'; 
+                font-size: 40px;
+                font-weight: 300;
+                color: #000000;
+              } 
+            }
+            .seccion2{
+              padding: 0px;
+              display: grid;
+              grid-template-columns: repeat( 1fr 1fr);
+             /* grid-template-columns: repeat(2, 1fr);*/
+              gap: 5px 5px;
+              .referencia,
+                .principal{
+               display: none;
+               }
+            }
+          
+            footer{
+              margin-top: 30px;
+              .gris{
+                display: none;
+                height: 80px;
+                margin-top: 20px;
+               } 
+               .negro{
+                margin-top: 50px;
+                .enlaces{
+                    grid-template-columns: repeat(2, 1fr);
+                    .primera{
+                     grid-column: span 2; 
+                    }
+                    .ultima{
+                        grid-column: span 2;
+                        margin-top: 30px; 
+                    }
+                }
+                .copy{
+                    display: none;
+                   } 
+               }
+
+            }    
+          }  
        
 
     @media(max-width: 320px) {
-      html{
+      html{ 
+        background-color: aqua;
+       }  
+      
+      #imgPrincipal{
 
-      }    
-  }    
+          height: 100vh;
+          width: 100%;
+          background-size: cover;
+          background-position: top;
+          background-repeat: no-repeat;
+          filter: brightness(0,5);
+        } 
+        .seccion{
+          .primera{
+            display: none;
+            }
+            .ultima{
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+               }
+            
+              }
+            .texto{
+              display: none;
+              }
+
+            .contenido{
+          display: none;
+          }
+        }
+
+
+        .developments{
+          text-align: center;
+          margin-top: 25px;
+          h2{
+            font-family:'/fonts/Pfregal'; 
+            font-size: 15px;
+            font-weight: 150;
+            color: #DF991B;  
+          }
+          h1{
+            font-family:'/fonts/Pfregal'; 
+            font-size: 30px;
+            font-weight: 250;
+            color: #000000;
+          } 
+        }
+
+        #galeriacont{
+
+            .seccion2{
+             display: grid;
+             grid-template-columns:repeat(1fr);
+             }
+        }  
+          
+    
+
+            footer{
+              margin-top: 30px;
+              .gris{
+                display: none;
+                height: 80px;
+                margin-top: 40px;
+               } 
+               .negro{
+                margin-top: 100px;
+                .enlaces{
+                    grid-template-columns: repeat(2, 1fr);
+                    .primera{
+                     grid-column: span 2; 
+                    }
+                    .ultima{
+                        grid-column: span 2;
+                        margin-top: 30px; 
+                    }
+                }
+                .copy{
+                    display: none;
+                   } 
+               }
+
+            }
+      }   
        
